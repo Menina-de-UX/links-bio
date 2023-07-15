@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+ @apply w-2;
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-400 rounded-lg ;
+}
+  body {
+    @apply bg-pink-100;
+  }
+}
+
+@layer components {
+  .cardStyle {
+    @apply w-full min-w-[280px] max-w-[530px] h-[5.3rem] rounded-lg shadow-lg cursor-pointer; 
+  }
+  .cardContent {
+    @apply w-full h-full rounded-lg flex items-center px-4 justify-between gap-x-8;
+  }
+  .effectTransition {
+    @apply transition-all duration-300 ease-out;
+  }
+  .TitleStyle-Principal {
+    @apply text-3xl font-medium;
+  }
+  .TitleStyle-Secondary {
+    @apply text-xl font-medium mb-8;
+  }
+  .TextStyle-Base {
+    @apply font-medium text-gray-400;
+  }
+  .strong {
+    @apply font-semibold text-blue-500;
+  }
+  .LinkStyle {
+    @apply text-2xl text-blue-500 font-semibold hover:text-pink-300 effectTransition;
+  }
+}
