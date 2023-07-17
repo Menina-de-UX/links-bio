@@ -26,17 +26,16 @@ export default function Home() {
           <div className="flex flex-col  mb-16">
             <Link href="https://meninadeux.com/">
               <Image
-                src="/Logo.svg"
-                width={50}
-                height={50}
+                src="/Completa.svg"
+                width={180}
+                height={180}
                 alt="Logo do projeto Menina de UX"
-                className="ml-12"
+                className=""
               />
-              <span className="LinkStyle">Menina de UX</span>
             </Link>
             <p className="text-sm text-gray-300">Ajudando meninas como eu</p>
           </div>
-          <div className="flex flex-col gap-y-6 mb-14">
+          <div className="flex flex-col gap-y-6 mb-10">
             <Title style="TitleStyle-Principal">Oiê, tudo bem? 👩🏻‍💻</Title>
             <Text style="TextStyle-Base leading-5 text-justify">
               A <span className="strong">Menina de UX</span> é uma iniciativa
@@ -49,46 +48,48 @@ export default function Home() {
               Espero que eu possa te ajudar! 😊
             </Text>
           </div>
-          <div>
-            <Title style="TitleStyle-Secondary">Links tops</Title>
+          <div className="mt-8">
+            <Title style="TitleStyle-Secondary">Parcerias</Title>
 
             <div className="w-full flex flex-col items-center gap-y-4">
               <Card
-                text="Seja voluntário na Menina de UX"
-                emoji="&#128170;"
+                text="Use nosso cupom de 20% de desconto no curso da Coderhouse"
+                emoji="🎟️"
+                link="https://meninadeux.com/"
+              />
+              <Card
+                text="Use nosso cupom de 10% de desconto no curso da Cubos Academy"
+                emoji="🎟️"
+                link="t.me/meninadeux"
+              />
+            </div>
+          </div>
+          <div className="mt-8">
+            <Title style="TitleStyle-Secondary">Redes Sociais</Title>
+
+            <div className="w-full flex flex-col items-center gap-y-4">
+              <Card
+                text="Acesse o nosso site"
+                emoji="🌏"
                 principal={true}
-                link="https://www.google.com/"
+                link="https://meninadeux.com/"
               />
               <Card
-                text="Acesse o site"
-                emoji="&#128153;"
-                link="https://www.google.com/"
+                text="Entre no nosso canal do Telegram"
+                emoji="📨"
+                link="t.me/meninadeux"
               />
               <Card
-                text="Acesse o site"
+                text="LinkedIn"
                 emoji="&#128153;"
-                link="https://www.google.com/"
+                link="https://linkedin.com/company/meninadeux"
               />
               <Card
-                text="Acesse o site"
-                emoji="&#128153;"
-                link="https://www.google.com/"
+                text="Instagram"
+                emoji="📷"
+                link="instagram.com/meninadeux"
               />
-              <Card
-                text="Acesse o site"
-                emoji="&#128153;"
-                link="https://www.google.com/"
-              />
-              <Card
-                text="Acesse o site"
-                emoji="&#128153;"
-                link="https://www.google.com/"
-              />
-              <Card
-                text="Acesse o site"
-                emoji="&#128153;"
-                link="https://www.google.com/"
-              />
+              <Card text="Threads" emoji="✍🏻" link="threads.net/@meninadeux" />
             </div>
           </div>
         </section>

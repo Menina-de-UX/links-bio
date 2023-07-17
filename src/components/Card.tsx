@@ -15,7 +15,9 @@ export function Card({ emoji, text, principal, link }: ICard) {
       <div className={`cardStyle group`} onClick={handlerClick}>
         <div
           className={`cardContent  ${
-            principal ? 'bg-blue-500' : 'bg-white group-hover:bg-blue-500 '
+            principal
+              ? 'bg-blue-500 animate-bounce'
+              : 'bg-white group-hover:bg-blue-500 '
           } effectTransition`}
         >
           <span
