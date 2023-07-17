@@ -65,13 +65,18 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8">
-            <Title style="TitleStyle-Secondary">Redes Sociais</Title>
+            <Title style="TitleStyle-Secondary">Nossos Links</Title>
 
             <div className="w-full flex flex-col items-center gap-y-4">
               <Card
+                text="Seja uma voluntária!"
+                emoji="💪🏻"
+                principal={true}
+                link="https://www.atados.com.br/ong/menina-de-ux"
+              />
+              <Card
                 text="Acesse o nosso site"
                 emoji="🌏"
-                principal={true}
                 link="https://meninadeux.com/"
               />
               <Card
