@@ -18,10 +18,10 @@
 
 @layer components {
   .cardStyle {
-    @apply w-full min-w-[280px] max-w-[530px] h-[5.3rem] rounded-lg shadow-lg cursor-pointer; 
+    @apply w-full min-w-[280px] max-w-[530px] h-[5.3rem] rounded-lg cursor-pointer; 
   }
   .cardContent {
-    @apply w-full h-full rounded-lg flex items-center px-4 justify-between gap-x-8;
+    @apply w-full h-full rounded-lg flex items-center px-4 justify-between shadow-lg  gap-x-4 lg:gap-x-12;
   }
   .effectTransition {
     @apply transition-all duration-300 ease-out;
