@@ -55,12 +55,12 @@ export default function Home() {
               <Card
                 text="Use nosso cupom de 20% de desconto no curso da Coderhouse"
                 emoji="🎟️"
-                link="https://meninadeux.com/"
+                link="https://coderhouse.com.br/?utm_source=alianzas&utm_medium=alianzas&utm_campaign=alianza"
               />
               <Card
                 text="Use nosso cupom de 10% de desconto no curso da Cubos Academy"
                 emoji="🎟️"
-                link="t.me/meninadeux"
+                link="https://tinyurl.com/uxcubos"
               />
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
               <Card
                 text="Entre no nosso canal do Telegram"
                 emoji="📨"
-                link="t.me/meninadeux"
+                link="https://t.me/meninadeux"
               />
               <Card
                 text="LinkedIn"
@@ -87,9 +87,13 @@ export default function Home() {
               <Card
                 text="Instagram"
                 emoji="📷"
-                link="instagram.com/meninadeux"
+                link="https://instagram.com/meninadeux"
               />
-              <Card text="Threads" emoji="✍🏻" link="threads.net/@meninadeux" />
+              <Card
+                text="Threads"
+                emoji="✍🏻"
+                link="https://threads.net/@meninadeux"
+              />
             </div>
           </div>
         </section>
