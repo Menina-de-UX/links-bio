@@ -4,7 +4,7 @@
 // Interfaces
 import { ICard } from '@/interfaces/components'
 
-export function Card({ emoji, text, principal, link }: ICard) {
+export function Card({ emoji, principal, link, children }: ICard) {
   //  função que ao ser clicado abre uma nova janela e redireciona para o link sugerido
   function handlerClick() {
     window.open(link, '_blank')
@@ -27,7 +27,7 @@ export function Card({ emoji, text, principal, link }: ICard) {
                 : 'font-medium group-hover:text-white'
             } `}
           >
-            {text}
+            {children}
           </span>
           <span className="text-3xl lg:text-4xl">{emoji}</span>
         </div>
