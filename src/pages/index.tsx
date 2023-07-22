@@ -30,7 +30,7 @@ export default function Home() {
                 width={180}
                 height={180}
                 alt="Logo do projeto Menina de UX"
-                className=""
+                priority
               />
             </Link>
             <p className="text-sm text-gray-300">Ajudando meninas como eu</p>
@@ -53,15 +53,20 @@ export default function Home() {
 
             <div className="w-full flex flex-col items-center gap-y-4">
               <Card
-                text="Use nosso cupom de 20% de desconto no curso da Coderhouse"
                 emoji="🎟️"
                 link="https://coderhouse.com.br/?utm_source=alianzas&utm_medium=alianzas&utm_campaign=alianza"
-              />
+              >
+                20% de desconto em qualquer curso da Coderhouse
+              </Card>
+              <Card emoji="🎟️" link="https://tinyurl.com/uxcubos">
+                10% de desconto no curso de UX Design da Cubos Academy
+              </Card>
               <Card
-                text="Use nosso cupom de 10% de desconto no curso da Cubos Academy"
-                emoji="🎟️"
-                link="https://tinyurl.com/uxcubos"
-              />
+                emoji="📚"
+                link="https://aulas.cubos.academy/criar-conta?utm_source=meninadeux&utm_medium=influencerPaid&utm_campaign=20230720_instagram_userExperience&utm_content=sales&utm_keyword=minicursogratuito"
+              >
+                Minicurso de UX da Cubos Academy
+              </Card>
             </div>
           </div>
           <div className="mt-8">
@@ -69,36 +74,30 @@ export default function Home() {
 
             <div className="w-full flex flex-col items-center gap-y-4">
               <Card
-                text="Seja uma voluntária!"
                 emoji="💪🏻"
                 principal={true}
                 link="https://www.atados.com.br/ong/menina-de-ux"
-              />
+              >
+                Seja uma voluntária!
+              </Card>
+              <Card emoji="🌏" link="https://meninadeux.com/">
+                Acesse o nosso site
+              </Card>
+              <Card emoji="📨" link="https://t.me/meninadeux">
+                Entre no nosso canal do Telegram
+              </Card>
               <Card
-                text="Acesse o nosso site"
-                emoji="🌏"
-                link="https://meninadeux.com/"
-              />
-              <Card
-                text="Entre no nosso canal do Telegram"
-                emoji="📨"
-                link="https://t.me/meninadeux"
-              />
-              <Card
-                text="LinkedIn"
                 emoji="&#128153;"
                 link="https://linkedin.com/company/meninadeux"
-              />
-              <Card
-                text="Instagram"
-                emoji="📷"
-                link="https://instagram.com/meninadeux"
-              />
-              <Card
-                text="Threads"
-                emoji="✍🏻"
-                link="https://threads.net/@meninadeux"
-              />
+              >
+                LinkedIn
+              </Card>
+              <Card emoji="📷" link="https://instagram.com/meninadeux">
+                Instagram
+              </Card>
+              <Card emoji="✍🏻" link="https://threads.net/@meninadeux">
+                Threads
+              </Card>
             </div>
           </div>
         </section>
