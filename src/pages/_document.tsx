@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
+        <meta name="description" content="Links Meninia de UX" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
