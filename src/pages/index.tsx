@@ -2,6 +2,10 @@
 import { Card } from '@/components/Card'
 import { Text } from '@/components/Text'
 import { Title } from '@/components/Title'
+import Instagram from '@/components/icons/instagram'
+import LinkedIn from '@/components/icons/linkedin'
+import { Medium } from '@/components/icons/medium'
+import Threads from '@/components/icons/threads'
 
 // Utilities
 import { Inter } from 'next/font/google'
@@ -23,7 +27,7 @@ export default function Home() {
         className={`flex min-h-screen flex-col items-center gap-5 py-10 px-8 ${inter.className}`}
       >
         <section className="max-w-[530px] w-auto">
-          <div className="flex flex-col  mb-16">
+          <div className="flex flex-col  mb-16 items-center">
             <Link href="https://meninadeux.com/">
               <Image
                 src="/Completa.svg"
@@ -33,7 +37,20 @@ export default function Home() {
                 priority
               />
             </Link>
-            <p className="text-sm text-gray-300">Ajudando meninas como eu</p>
+            <div className="flex flex-row my-5">
+              <Link href="https://medium.com/@meninadeux">
+                <Medium />
+              </Link>
+              <Link href="https://threads.net/@meninadeux">
+                <Threads />
+              </Link>
+              <Link href="https://instagram.com/meninadeux">
+                <Instagram />
+              </Link>
+              <Link href="https://linkedin.com/company/meninadeux">
+                <LinkedIn />
+              </Link>
+            </div>
           </div>
           <div className="flex flex-col gap-y-6 mb-10">
             <Title style="TitleStyle-Principal">Oiê, tudo bem? 👩🏻‍💻</Title>
@@ -52,20 +69,33 @@ export default function Home() {
             <Title style="TitleStyle-Secondary">Parcerias</Title>
 
             <div className="w-full flex flex-col items-center gap-y-4">
-              <Card
-                emoji="🎟️"
-                link="https://coderhouse.com.br/?utm_source=alianzas&utm_medium=alianzas&utm_campaign=alianza"
-              >
-                20% de desconto em qualquer curso da Coderhouse
+              <Card emoji="🎟️" link="https://coderhouse.com.br/">
+                Use MENINADEUX para ganhar 20% de desconto nos cursos da
+                Coderhouse
               </Card>
               <Card emoji="🎟️" link="https://tinyurl.com/uxcubos">
-                10% de desconto no curso de UX Design da Cubos Academy
+                Use MENINA10 para ganhar 10% de desconto no curso de UX Design
+                da Cubos Academy
+              </Card>
+              <Card emoji="🎟️" link="https://www.thestarter.io/">
+                Use MENINA25 para ganhar 25% de desconto nos cursos da
+                TheStarter
+              </Card>
+              <Card emoji="🎟️" link="https://www.thestarter.io/">
+                Use MENINADEUX15 para ganhar 15% de desconto nos cursos da How
+                Bootcamps
               </Card>
               <Card
                 emoji="📚"
                 link="https://aulas.cubos.academy/criar-conta?utm_source=meninadeux&utm_medium=influencerPaid&utm_campaign=20230720_instagram_userExperience&utm_content=sales&utm_keyword=minicursogratuito"
               >
-                Minicurso de UX da Cubos Academy
+                Minicurso gratuito de UI/UX Design da Cubos Academy
+              </Card>
+              <Card
+                emoji="📚"
+                link="https://howedu.com.br/ux-design-para-todos/"
+              >
+                Curso Gratuito da How - UX Design para Todos
               </Card>
             </div>
           </div>
@@ -82,9 +112,6 @@ export default function Home() {
               </Card>
               <Card emoji="🌏" link="https://meninadeux.com/">
                 Acesse o nosso site
-              </Card>
-              <Card emoji="📨" link="https://t.me/meninadeux">
-                Entre no nosso canal do Telegram
               </Card>
               <Card
                 emoji="&#128153;"
