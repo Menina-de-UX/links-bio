@@ -22,7 +22,7 @@ const socialIcons: ISocialIcon[] = [
   },
 ]
 
-export function SocialMediaLinks() {
+export function SocialMediaIcon() {
   return (
     <div className="flex gap-5 justify-center">
       {socialIcons.map((socialIcon, index) => (
