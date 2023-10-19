@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {},
+      width: {
+        card: '35rem',
+      },
     },
     colors: {
       white: '#FFFFFF',
@@ -23,6 +26,7 @@ module.exports = {
         400: '#272727',
         300: '#514f50',
       },
+      black: '#091227',
     },
   },
 }
