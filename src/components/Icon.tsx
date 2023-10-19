@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { ISocialIcon } from '@/interfaces/components'
+import { ISocialMediaIcon } from '@/interfaces/components'
 import { FaInstagram, FaLinkedin, FaMedium, FaDiscord } from 'react-icons/fa'
 
-const socialIcons: ISocialIcon[] = [
+const socialIcons: ISocialMediaIcon[] = [
   {
     icon: FaInstagram,
     link: 'https://www.instagram.com/meninadeux',
@@ -22,7 +22,7 @@ const socialIcons: ISocialIcon[] = [
   },
 ]
 
-export function SocialMediaLinks() {
+export function SocialMediaIcon() {
   return (
     <div className="flex gap-5 justify-center">
       {socialIcons.map((socialIcon, index) => (

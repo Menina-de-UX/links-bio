@@ -10,7 +10,7 @@ export interface ITitle {
   style: string
 }
 
-export interface ISocialIcon {
+export interface ISocialMediaIcon {
   icon: React.ElementType
   link: string
 }
