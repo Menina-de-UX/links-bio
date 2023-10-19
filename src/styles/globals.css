@@ -9,10 +9,10 @@
 
 /* Cor da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-  @apply bg-blue-400 rounded-lg ;
+  @apply bg-pink-300 rounded-lg ;
 }
   body {
-    @apply bg-pink-100;
+    @apply bg-black;
   }
 }
 
@@ -21,22 +21,22 @@
     @apply w-full min-w-[280px] max-w-[530px] h-[5.3rem] rounded-lg cursor-pointer; 
   }
   .cardContent {
-    @apply w-full h-full rounded-lg flex items-center px-4 justify-between shadow-lg  gap-x-4 lg:gap-x-12;
+    @apply w-card h-full rounded-full flex items-center px-6 justify-center text-center shadow-lg  gap-x-5 lg:gap-x-12;
   }
   .effectTransition {
     @apply transition-all duration-300 ease-out;
   }
   .TitleStyle-Principal {
-    @apply text-3xl font-medium;
+    @apply text-3xl font-medium text-white;
   }
   .TitleStyle-Secondary {
-    @apply text-xl font-medium mb-8;
+    @apply text-xl text-center font-bold mb-8 text-white;
   }
   .TextStyle-Base {
-    @apply font-medium text-gray-400;
+    @apply font-medium text-center text-white;
   }
   .strong {
-    @apply font-semibold text-blue-500;
+    @apply font-semibold text-white;
   }
   .LinkStyle {
     @apply text-2xl text-blue-500 font-semibold hover:text-pink-300 effectTransition;
