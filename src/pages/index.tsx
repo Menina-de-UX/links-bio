@@ -102,7 +102,7 @@ export default function Home() {
           <div className="mt-8">
             <Title style="TitleStyle-Secondary">Nossos Links</Title>
 
-            <div className="w-full flex flex-col items-center gap-y-4">
+            <div className="w-full grid grid-cols-2 items-center gap-4 ">
               <Card
                 emoji="💪🏻"
                 principal={true}
@@ -110,19 +110,28 @@ export default function Home() {
               >
                 Seja uma voluntária!
               </Card>
-              <Card emoji="🌏" link="https://meninadeux.com/">
+              <Card emoji="🌏" principal={true} link="https://meninadeux.com/">
                 Acesse o nosso site
               </Card>
               <Card
                 emoji="&#128153;"
+                principal={true}
                 link="https://linkedin.com/company/meninadeux"
               >
                 LinkedIn
               </Card>
-              <Card emoji="📷" link="https://instagram.com/meninadeux">
+              <Card
+                emoji="📷"
+                principal={true}
+                link="https://instagram.com/meninadeux"
+              >
                 Instagram
               </Card>
-              <Card emoji="✍🏻" link="https://threads.net/@meninadeux">
+              <Card
+                emoji="✍🏻"
+                principal={true}
+                link="https://threads.net/@meninadeux"
+              >
                 Threads
               </Card>
             </div>

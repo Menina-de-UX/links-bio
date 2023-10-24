@@ -16,7 +16,7 @@ export function Card({ principal, link, children }: ICard) {
         <div
           className={`cardContent  ${
             principal
-              ? 'bg-blue-500 animate-bounce'
+              ? 'bg-blue-500'
               : 'bg-transparent border-2 scale-95 border-white hover:scale-100'
           } effectTransition`}
         >
