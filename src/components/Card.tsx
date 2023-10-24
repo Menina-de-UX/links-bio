@@ -3,10 +3,11 @@
 // Hooks
 // Interfaces
 import { ICard } from '@/interfaces/components'
+import { ComponentProps } from 'react'
 
 export type SpanTextProps = {
   principal?: boolean
-} & React.ComponentProps<'span'>
+} & ComponentProps<'span'>
 
 export function SpanText(props: SpanTextProps) {
   const { principal, ...rest } = props
@@ -15,9 +16,31 @@ export function SpanText(props: SpanTextProps) {
       {...rest}
       className={` ${
         principal
-          ? 'text-lg lg:text-sm  font-semibold text-white'
+          ? 'text-sm lg:text-xs  font-semibold text-white'
           : 'font-medium text-white'
       } `}
+    />
+  )
+}
+
+export type CardTextProps = ComponentProps<'div'>
+
+export function CardText(props: CardTextProps) {
+  return (
+    <div className="w-cardLink px-2 pb-3 flex flex-col" {...props} />
+  )
+}
+
+export type CardImageProps = {
+  bgImage: string
+} & ComponentProps<'div'>
+
+export function CardImage(props: CardImageProps) {
+  const { bgImage, ...rest } = props
+  return (
+    <div
+      className={`${bgImage} bg-center bg-cover w-cardLink h-cardLink rounded-t-2xl mb-auto`}
+      {...rest}
     />
   )
 }
@@ -30,21 +53,17 @@ export function Card({ principal, link, children }: ICard) {
 
   return (
     <>
-      <div className={`cardStyle group`} onClick={handlerClick}>
+      <div
+        className={`cardStyle ${principal ? 'w-cardLink' : 'h-[5.3rem]'}`}
+        onClick={handlerClick}
+      >
         <div
           className={`cardContent  ${
             principal
-              ? 'bg-blue-500 flex flex-col h-auto rounded-none'
-              : 'bg-transparent border-2 scale-95 border-white hover:scale-100'
+              ? 'bg-black-200 flex flex-col rounded-2xl h-cardLInk'
+              : 'bg-transparent border-2 scale-95 border-white hover:scale-100 text-center w-card'
           } effectTransition`}
         >
-          {/*  <span
-            className={` ${
-              principal
-                ? 'text-lg lg:text-xl  font-semibold text-white'
-                : 'font-medium text-white'
-            } `}
-          ></span> */}
           {children}
         </div>
       </div>

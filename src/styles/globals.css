@@ -12,16 +12,16 @@
   @apply bg-pink-300 rounded-lg ;
 }
   body {
-    @apply bg-black;
+    @apply bg-black-300 font-sans;
   }
 }
 
 @layer components {
   .cardStyle {
-    @apply w-full  h-[5.3rem] rounded-lg cursor-pointer; 
+    @apply  cursor-pointer; 
   }
   .cardContent {
-    @apply  h-full rounded-full flex items-center px-6 justify-center text-center shadow-lg  gap-x-5 lg:gap-x-12;
+    @apply  h-full rounded-full flex items-center px-6 justify-center  shadow-lg ;
   }
   .effectTransition {
     @apply transition-all duration-300 ease-out;
@@ -30,10 +30,13 @@
     @apply text-3xl font-medium text-white;
   }
   .TitleStyle-Secondary {
-    @apply text-xl text-center font-bold mb-8 text-white;
+    @apply text-xl text-center font-bold mb-8 text-white ;
   }
   .TextStyle-Base {
     @apply font-medium text-center text-white;
+  }
+  .TitleSmall {
+  @apply text-lg text-white font-semibold my-2 font-sans;
   }
   .strong {
     @apply font-semibold text-white;

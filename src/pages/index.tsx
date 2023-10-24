@@ -1,5 +1,5 @@
 // Components
-import { Card, SpanText } from '@/components/Card'
+import { Card, CardImage, CardText, SpanText } from '@/components/Card'
 import { Text } from '@/components/Text'
 import { Title } from '@/components/Title'
 import Instagram from '@/components/icons/instagram'
@@ -11,6 +11,7 @@ import Threads from '@/components/icons/threads'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Image from 'next/image'
+import MulherAcenando from '@/../public/mulher_acenando.png'
 import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -68,7 +69,7 @@ export default function Home() {
           <div className="mt-8">
             <Title style="TitleStyle-Secondary">Parcerias</Title>
 
-            <div className="w-full flex flex-col items-center gap-y-4">
+            <div className="flex flex-col items-center gap-y-4">
               <Card link="https://coderhouse.com.br/">
                 <SpanText>
                   Use MENINADEUX para ganhar 20% de desconto nos cursos da
@@ -109,19 +110,29 @@ export default function Home() {
           <div className="mt-8">
             <Title style="TitleStyle-Secondary">Nossos Links</Title>
 
-            <div className="w-full grid grid-cols-2 items-center gap-4 ">
+            <div className="flex gap-6 ">
               <Card
                 principal={true}
                 link="https://www.atados.com.br/ong/menina-de-ux"
               >
-                <SpanText>Seja uma voluntária!</SpanText>
-                <SpanText principal={true}>
-                  Veja as vagas disponíveis na página da Atados e se candidate
-                  para fazer parte do nosso timeeja uma voluntária!
-                </SpanText>
+                <CardImage bgImage="bg-linkVolunteer" />
+                <CardText>
+                  <Title style="TitleSmall">Seja uma Voluntária </Title>
+                  <SpanText principal={true}>
+                    Veja as vagas disponíveis na página da Atados e se candidate
+                    para fazer parte do nosso time!
+                  </SpanText>
+                </CardText>
               </Card>
               <Card principal={true} link="https://meninadeux.com/">
-                <SpanText principal={true}>Acesse o nosso site</SpanText>
+                <CardImage bgImage="bg-linkSite" />
+                <CardText>
+                  <Title style="TitleSmall">Acesse o nosso Site </Title>
+                  <SpanText principal={true}>
+                    Aprenda sobre UX, Design, Tecnologia e ainda encontre
+                    milhares de cursos e oportunidades disponíveis para você!
+                  </SpanText>
+                </CardText>
               </Card>
             </div>
           </div>
