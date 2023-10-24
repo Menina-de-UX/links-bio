@@ -4,6 +4,24 @@
 // Interfaces
 import { ICard } from '@/interfaces/components'
 
+export type SpanTextProps = {
+  principal?: boolean
+} & React.ComponentProps<'span'>
+
+export function SpanText(props: SpanTextProps) {
+  const { principal, ...rest } = props
+  return (
+    <span
+      {...rest}
+      className={` ${
+        principal
+          ? 'text-lg lg:text-sm  font-semibold text-white'
+          : 'font-medium text-white'
+      } `}
+    />
+  )
+}
+
 export function Card({ principal, link, children }: ICard) {
   //  função que ao ser clicado abre uma nova janela e redireciona para o link sugerido
   function handlerClick() {
@@ -16,19 +34,18 @@ export function Card({ principal, link, children }: ICard) {
         <div
           className={`cardContent  ${
             principal
-              ? 'bg-blue-500'
+              ? 'bg-blue-500 flex flex-col h-auto rounded-none'
               : 'bg-transparent border-2 scale-95 border-white hover:scale-100'
           } effectTransition`}
         >
-          <span
+          {/*  <span
             className={` ${
               principal
                 ? 'text-lg lg:text-xl  font-semibold text-white'
                 : 'font-medium text-white'
             } `}
-          >
-            {children}
-          </span>
+          ></span> */}
+          {children}
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 // Components
-import { Card } from '@/components/Card'
+import { Card, SpanText } from '@/components/Card'
 import { Text } from '@/components/Text'
 import { Title } from '@/components/Title'
 import Instagram from '@/components/icons/instagram'
@@ -69,33 +69,40 @@ export default function Home() {
             <Title style="TitleStyle-Secondary">Parcerias</Title>
 
             <div className="w-full flex flex-col items-center gap-y-4">
-              <Card emoji="🎟️" link="https://coderhouse.com.br/">
-                Use MENINADEUX para ganhar 20% de desconto nos cursos da
-                Coderhouse
+              <Card link="https://coderhouse.com.br/">
+                <SpanText>
+                  Use MENINADEUX para ganhar 20% de desconto nos cursos da
+                  Coderhouse
+                </SpanText>
               </Card>
-              <Card emoji="🎟️" link="https://tinyurl.com/uxcubos">
-                Use MENINA10 para ganhar 10% de desconto no curso de UX Design
-                da Cubos Academy
+              <Card link="https://tinyurl.com/uxcubos">
+                <SpanText>
+                  Use MENINA10 para ganhar 10% de desconto no curso de UX Design
+                  da Cubos Academy
+                </SpanText>
               </Card>
-              <Card emoji="🎟️" link="https://www.thestarter.io/">
-                Use MENINA25 para ganhar 25% de desconto nos cursos da
-                TheStarter
+              <Card link="https://www.thestarter.io/">
+                <SpanText>
+                  Use MENINA25 para ganhar 25% de desconto nos cursos da
+                  TheStarter
+                </SpanText>
               </Card>
-              <Card emoji="🎟️" link="https://www.thestarter.io/">
-                Use MENINADEUX15 para ganhar 15% de desconto nos cursos da How
-                Bootcamps
+              <Card link="https://www.thestarter.io/">
+                <SpanText>
+                  Use MENINADEUX15 para ganhar 15% de desconto nos cursos da How
+                  Bootcamps
+                </SpanText>
               </Card>
-              <Card
-                emoji="📚"
-                link="https://aulas.cubos.academy/criar-conta?utm_source=meninadeux&utm_medium=influencerPaid&utm_campaign=20230720_instagram_userExperience&utm_content=sales&utm_keyword=minicursogratuito"
-              >
-                Minicurso gratuito de UI/UX Design da Cubos Academy
+              <Card link="https://aulas.cubos.academy/criar-conta?utm_source=meninadeux&utm_medium=influencerPaid&utm_campaign=20230720_instagram_userExperience&utm_content=sales&utm_keyword=minicursogratuito">
+                <SpanText>
+                  {' '}
+                  Minicurso gratuito de UI/UX Design da Cubos Academy
+                </SpanText>
               </Card>
-              <Card
-                emoji="📚"
-                link="https://howedu.com.br/ux-design-para-todos/"
-              >
-                Curso Gratuito da How - UX Design para Todos
+              <Card link="https://howedu.com.br/ux-design-para-todos/">
+                <SpanText>
+                  Curso Gratuito da How - UX Design para Todos
+                </SpanText>
               </Card>
             </div>
           </div>
@@ -104,35 +111,17 @@ export default function Home() {
 
             <div className="w-full grid grid-cols-2 items-center gap-4 ">
               <Card
-                emoji="💪🏻"
                 principal={true}
                 link="https://www.atados.com.br/ong/menina-de-ux"
               >
-                Seja uma voluntária!
+                <SpanText>Seja uma voluntária!</SpanText>
+                <SpanText principal={true}>
+                  Veja as vagas disponíveis na página da Atados e se candidate
+                  para fazer parte do nosso timeeja uma voluntária!
+                </SpanText>
               </Card>
-              <Card emoji="🌏" principal={true} link="https://meninadeux.com/">
-                Acesse o nosso site
-              </Card>
-              <Card
-                emoji="&#128153;"
-                principal={true}
-                link="https://linkedin.com/company/meninadeux"
-              >
-                LinkedIn
-              </Card>
-              <Card
-                emoji="📷"
-                principal={true}
-                link="https://instagram.com/meninadeux"
-              >
-                Instagram
-              </Card>
-              <Card
-                emoji="✍🏻"
-                principal={true}
-                link="https://threads.net/@meninadeux"
-              >
-                Threads
+              <Card principal={true} link="https://meninadeux.com/">
+                <SpanText principal={true}>Acesse o nosso site</SpanText>
               </Card>
             </div>
           </div>

@@ -1,8 +1,8 @@
 export interface ICard {
-  emoji: string
+  emoji?: string
   principal?: boolean
   link: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export interface ITitle {
